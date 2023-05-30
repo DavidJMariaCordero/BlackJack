@@ -67,7 +67,7 @@ const MachineTurn = (minPoints) => {
                     : (puntosJugador > 21) ? 'Gano la maquina'
                     : 'Gano la maquina';
         alert(mensaje);
-    }, 100);
+    }, 1000);
 }
 
 createDeck();
@@ -103,7 +103,7 @@ btnDetener.addEventListener('click', () => {
 
 btnNuevo.addEventListener('click', () => {
     deck = createDeck();
-    
+
     puntosJugador = 0;
     puntosMaquina = 0;
 
