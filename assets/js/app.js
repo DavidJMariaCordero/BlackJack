@@ -102,19 +102,21 @@ btnDetener.addEventListener('click', () => {
 });
 
 btnNuevo.addEventListener('click', () => {
-    deck = createDeck();
+    createDeck();
 
     puntosJugador = 0;
     puntosMaquina = 0;
 
-    puntosHtml[0].innerText = 0;
-    puntosHtml[1].innerText = 0;
+    puntosHtml[0] = 0;
+    puntosHtml[1] = 0;
     
     divCartasJugador.innerHTML = '';
     divCartasMaquina.innerHTML = '';
 
     btnPedir.disabled = false;
     btnDetener.disabled = false;
+
+    console.log(deck);
 })
 
 
